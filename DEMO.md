@@ -43,7 +43,7 @@ Enter your own estimates: for the website example, try 12 hours for the shop, 6 
 ## Before submitting
 
 - Add the public source repository link required for your submission.
-- Add the repository and recording links to `SUBMISSION.md`.
+- Upload the finished MP4 to your preferred video host if you want an embedded player in the DEV post. The repository copy is already linked from `SUBMISSION.md`.
 - Review the official challenge page for the exact deadline, tags, template, eligibility, and required links; live rules were not retrieved in this session.
 - Use actual run timings if you mention performance. Do not claim paying users, revenue recovered, or measured time saved.
 - Confirm the final article's AI-assistance disclosure and the platform's requirements.

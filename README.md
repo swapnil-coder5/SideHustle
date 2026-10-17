@@ -4,6 +4,8 @@
 
 A private scope-creep assistant for freelancers and independent studios. Compare the original agreement with a client's new request, review evidence-linked findings, and turn approved extras into a clear change order.
 
+**Demo:** [Watch or download the 48-second ScopeShield walkthrough](demo/ScopeShield-demo.mp4)
+
 Built for the **Side Hustle / open-source AI** brief. This is a functional local prototype, with an intentionally narrow workflow and no paid AI APIs.
 
 ## Run it
@@ -103,6 +105,7 @@ The application package is marked `UNLICENSED`; no application license is includ
 
 - `SUBMISSION.md`: editable article draft, open-innovation explanation, and commercial case.
 - `DEMO.md`: 90-second recording script and tonight's handoff tasks.
+- `demo/ScopeShield-demo.mp4`: 48-second captioned product walkthrough.
 - `VALIDATION.md`: actual validation and remaining verification limits.
 
 References: [Ollama structured output API](https://docs.ollama.com/api/generate), [Qwen2.5 1.5B model card](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct).

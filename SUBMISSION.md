@@ -1,6 +1,6 @@
 # ScopeShield: The Local AI That Turns “Just One More Thing” Into a Change Order
 
-> Submission draft. Replace the link placeholders and add your actual screenshots/recording before publishing. The challenge's live rules and exact submission template could not be retrieved; verify the deadline, tags, and required fields on the organizer's page. Do not present sample estimates as benchmark results or earned revenue.
+> Submission draft. Add your actual screenshots before publishing. Verify the deadline, tags, and required fields on the organizer's page. Do not present sample estimates as benchmark results or earned revenue.
 
 ## What I built
 
@@ -16,7 +16,7 @@ Each finding comes with the original request passage and a source passage select
 
 **Source code:** [ScopeShield on GitHub](https://github.com/swapnil-coder5/SideHustle)
 
-**Demo video:** [ADD RECORDING LINK]
+**Demo video:** [Watch or download the ScopeShield walkthrough](https://github.com/swapnil-coder5/SideHustle/blob/main/demo/ScopeShield-demo.mp4)
 
 **Run locally:** `npm start`, with Node.js 22+ and Ollama running `qwen2.5:1.5b`. See the repository README for setup. This is deliberately a local application; the core AI does not need a hosted backend.
 
