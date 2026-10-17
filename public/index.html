@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Catch scope creep. Protect your margin. Private, local AI for independent creatives.">
+  <meta name="theme-color" content="#c8202c"><title>ScopeShield — Make the extra work visible.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23c8202c'/%3E%3Cpath d='M20 7 31 12v9c0 7-11 13-11 13S9 28 9 21v-9Z' fill='%23ffffff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="ScopeShield home"><span class="brand-icon">S<span>↗</span></span>ScopeShield<span class="brand-dot">.</span></a>
+    <div class="workspace-label">YOUR WORKSPACE <span>LOCAL</span></div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" id="nav-audit"><span>◈</span> Scope workspace <span class="nav-count">01</span></button>
+      <button class="nav-item" id="nav-how"><span>◎</span> How it works <span class="nav-arrow">↗</span></button>
+      <button class="nav-item" id="nav-settings"><span>⚙</span> Local AI settings</button>
+    </nav>
+    <div class="privacy-card"><span class="privacy-icon">⌂</span><div><strong>Private by architecture</strong><p>No cloud AI. No account.<br>Your documents stay here.</p></div></div>
+    <div class="profile"><span class="avatar">Y</span><div><strong>Your local workspace</strong><span>No subscription required</span></div><span>↗</span></div>
+  </aside>
+  <div class="page">
+    <header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="slash">/</span><span>New scope review</span></div><button id="connection" class="connection"><span>Checking local AI</span><span>↗</span></button></header>
+    <main>
+      <section class="intro"><div><h1 class="side-hustle-title">Side<br><em>Hustle.</em></h1></div><div class="intro-art" aria-hidden="true"><div class="art-orbit"></div><div class="art-card back"><span>THE ORIGINAL SCOPE</span><i></i><i></i><i></i><small>Agreed & signed ✓</small></div><div class="art-card front"><span>THE “QUICK” REQUEST</span><div>One more thing…</div><b>+ extra work ↗</b></div><span class="art-spark">✳</span></div></section>
+      <section class="summary-strip" aria-label="Product principles"><span><b>01</b> Compare the context</span><span><b>02</b> Find the boundaries</span><span><b>03</b> Get paid fairly</span><span class="strip-private"><i></i> On your machine. On your terms.</span></section>
+      <div class="workspace-heading"><div><h2>Your scope workspace <span>NEW REVIEW</span></h2><p>Start with the agreement.</p></div><button class="text-button" id="reset">↻ &nbsp; Clear workspace</button></div>
+      <div class="sample-bar"><div><span class="sample-icon">✦</span><strong>Take it for a spin</strong><span class="sample-description">Load an example, then run the local AI.</span></div><div class="sample-actions"><select id="sample" aria-label="Example project"><option value="studio">The “tiny” website update</option><option value="brand">The logo that became a brand</option><option value="video">One video. Five more versions.</option></select><button id="load-sample">Load example <span>↗</span></button></div></div>
+      <form id="review-form">
+        <div class="input-grid">
+          <section class="document-card"><div class="card-heading"><span class="step-number">01</span><div><h3>The original agreement</h3><p>What you actually said yes to.</p></div><label class="upload-button" title="Upload a text or Markdown file">↥ <span>Import text</span><input type="file" id="contract-file" accept=".txt,.md,text/plain,text/markdown" hidden></label></div><label class="sr-only" for="contract">Original agreement</label><textarea id="contract" maxlength="16000" required minlength="20" placeholder="Paste your proposal, statement of work, or the original agreement…&#10;&#10;Tip: include deliverables, revision limits, exclusions, and any work already completed."></textarea><div class="document-footer"><span><i class="small-dot"></i> Plain text · stays on this device</span><span id="contract-count">0 characters</span></div></section>
+          <section class="document-card"><div class="card-heading"><span class="step-number purple">02</span><div><h3>The new client request</h3><p>The email. The message. The “tiny” ask.</p></div><label class="upload-button" title="Upload a text or Markdown file">↥ <span>Import text</span><input type="file" id="request-file" accept=".txt,.md,text/plain,text/markdown" hidden></label></div><label class="sr-only" for="request">New client request</label><textarea id="request" maxlength="16000" required minlength="20" placeholder="Paste the client's latest email or message…&#10;&#10;“Hey! Love how this is coming along. Could we just add a few more things before launch?”"></textarea><div class="document-footer"><span><i class="small-dot purple-dot"></i> No inbox access needed</span><span id="request-count">0 characters</span></div></section>
+        </div>
+        <div class="project-settings"><label class="project-name">PROJECT NAME<input id="project" maxlength="100" value="Untitled project" required></label><label>CLIENT NAME<input id="client" maxlength="60" placeholder="e.g. Alex"></label><label>YOUR HOURLY RATE<div class="joined-input"><select id="currency" aria-label="Currency"><option>USD</option><option>INR</option><option>EUR</option><option>GBP</option></select><input id="rate" type="number" min="1" max="100000" step="0.01" value="85" required><span>/hr</span></div></label><label>ORIGINAL PROJECT FEE<input id="budget" type="number" min="0" max="10000000" value="2400" required></label></div>
+        <div class="analyze-bar"><div><span class="shield-small">◇</span><p><strong>Your client data is your business.</strong><br>AI runs locally through Ollama. Nothing is saved automatically.</p></div><div class="analyze-actions"><button type="button" id="walkthrough" class="text-button">See sample report</button><button type="submit" id="analyze" class="primary-button">Find the scope creep <span>↗</span></button></div></div>
+      </form>
+      <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+      <section id="results" hidden aria-label="Scope analysis results"></section>
+      <footer><span class="footer-brand">ScopeShield<span>↗</span></span><span>OPEN-WEIGHT AI. INDEPENDENT BY DESIGN.</span></footer>
+    </main>
+  </div>
+  <dialog id="settings-dialog"><div class="dialog-top"><span class="eyebrow">YOUR MACHINE. YOUR MODEL.</span><button class="close-dialog" aria-label="Close settings">×</button></div><h2>Local AI settings</h2><p>ScopeShield talks only to Ollama at <code>127.0.0.1:11434</code>. No API keys, cloud models, or document storage.</p><div id="model-status"></div><label class="dialog-label" for="model">INSTALLED MODEL</label><select id="model"></select><p class="model-note">Recommended: <strong>qwen2.5:1.5b</strong> (Apache 2.0). Larger models can improve analysis. Check each model’s license before commercial use.</p><div class="setup-box"><strong>First time here?</strong><p>Install <a href="https://ollama.com/download" target="_blank" rel="noreferrer">Ollama</a>, then run:</p><code>ollama pull qwen2.5:1.5b</code><p>Start Ollama and reconnect below. After downloading, inference works without internet.</p></div><button id="reconnect" class="primary-button">Reconnect to Ollama <span>↻</span></button></dialog>
+  <dialog id="how-dialog"><div class="dialog-top"><span class="eyebrow">BOUNDARIES, WITHOUT THE DRAMA.</span><button class="close-dialog" aria-label="Close explanation">×</button></div><h2>From “quick change”<br>to clear change order.</h2><ol class="how-steps"><li><strong>Give it both sides.</strong><p>Paste the agreement and the request. Context helps: revision rounds used, exclusions, and agreed deliverables.</p></li><li><strong>Local AI compares them.</strong><p>The model separates included work, potential extras, and ambiguity. Source quotes are checked against your actual documents.</p></li><li><strong>You make the call.</strong><p>Review the evidence, adjust the hours, and choose the items to propose. You set the hours; the AI classifies scope.</p></li><li><strong>Send a better conversation.</strong><p>Copy a reply, download a Markdown change order, or print a PDF. Nothing is sent automatically.</p></li></ol><div class="setup-box">Why open? Your confidential agreements stay on hardware you control. Swap the model, inspect the prompt, and keep working offline after setup.</div></dialog>
+  <div id="toast" role="status" hidden></div>
+</body></html>
